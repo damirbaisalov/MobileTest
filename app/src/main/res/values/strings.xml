@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">mobileTest</string>
+    <string name="skip">Пропустить</string>
+    <string name="support">Служба поддержки</string>
+    <string name="login">Войти</string>
+    <string name="sign_up">Регистрация</string>
+    <string name="password_hint">Пароль</string>
+    <string name="login_hint">Логин</string>
+    <string name="welcome">ДОБРО ПОЖАЛОВАТЬ!</string>
 </resources>

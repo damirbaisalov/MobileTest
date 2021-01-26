@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    tools:context=".login.LoginActivity">
+
+    <Button
+        android:id="@+id/activity_login_skip_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_40x"
+        android:text="@string/skip"
+        android:textSize="@dimen/view_text_size_20x"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_activity_login_skip_button"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="@dimen/view_margin_15x"
+        android:paddingBottom="@dimen/view_padding_4x"
+        />
+
+    <Button
+        android:id="@+id/activity_login_support_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_40x"
+        android:text="@string/support"
+        android:textSize="@dimen/view_text_size_20x"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_activity_login_button"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        android:layout_above="@+id/activity_login_skip_button"
+        android:paddingBottom="@dimen/view_padding_4x"
+        />
+
+    <LinearLayout
+        android:id="@+id/activity_login_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_login_support_button"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        android:layout_marginVertical="@dimen/view_margin_15x"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/view_height_40x"
+            android:text="@string/login"
+            android:textSize="@dimen/view_text_size_20x"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_activity_login_button"
+            android:paddingBottom="@dimen/view_padding_4x"
+            android:layout_marginEnd="@dimen/view_margin_20x"
+            />
+
+        <Button
+            android:id="@+id/sign_up_button"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/view_height_40x"
+            android:text="@string/sign_up"
+            android:textSize="@dimen/view_text_size_20x"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_activity_login_button"
+            android:paddingBottom="@dimen/view_padding_4x"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/login_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_40x"
+        android:background="@drawable/bg_activity_login_edit_text"
+        android:layout_above="@id/password_edit_text"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        android:hint="@string/login_hint"
+        android:textSize="@dimen/view_text_size_20x"
+        android:textColor="@color/black"
+        android:focusedByDefault="false"
+        android:defaultFocusHighlightEnabled="false"
+        android:lines="1"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/view_padding_18x"
+        android:layout_marginVertical="@dimen/view_margin_15x"
+        />
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_40x"
+        android:background="@drawable/bg_activity_login_edit_text"
+        android:layout_above="@id/activity_login_linear_layout"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        android:hint="@string/password_hint"
+        android:textSize="@dimen/view_text_size_20x"
+        android:textColor="@color/black"
+        android:focusedByDefault="false"
+        android:defaultFocusHighlightEnabled="false"
+        android:lines="1"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/view_padding_18x"
+        />
+
+    <TextView
+        android:id="@+id/activity_login_welcome_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login_edit_text"
+        android:text="@string/welcome"
+        android:textSize="@dimen/view_text_size_20x"
+        android:textColor="@color/secondary_color"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/activity_login_welcome_text_view"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/activity_login_logo"
+            android:layout_above="@id/activity_login_welcome_text_view"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
