@@ -11,6 +11,8 @@ import android.widget.EditText
 import android.widget.Toast
 import com.example.mobiletest.MainActivity
 import com.example.mobiletest.R
+import com.example.mobiletest.registration.RegistrationActivity
+import com.example.mobiletest.support.presentation.SupportServiceActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -47,8 +49,14 @@ class LoginActivity : AppCompatActivity() {
                 ).show()
             }
         }
-        signUpButton.setOnClickListener {  }
-        supportButton.setOnClickListener {  }
+        signUpButton.setOnClickListener {
+            val intent = Intent(this, RegistrationActivity::class.java)
+            startActivity(intent)
+        }
+        supportButton.setOnClickListener {
+            val intent = Intent(this, SupportServiceActivity::class.java)
+            startActivity(intent)
+        }
         skipButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
