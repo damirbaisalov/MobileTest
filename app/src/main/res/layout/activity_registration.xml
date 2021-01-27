@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_color"
+    android:overScrollMode="never"
     tools:context=".registration.RegistrationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/account_image"
@@ -13,6 +18,7 @@
         android:layout_height="150dp"
         android:layout_alignParentTop="true"
         android:src="@drawable/ic_baseline_person"
+        android:scaleType="centerCrop"
         android:layout_marginTop="@dimen/view_margin_15x"
         android:layout_marginHorizontal="@dimen/view_margin_20x"
         android:background="@color/white"
@@ -146,7 +152,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/view_height_40x"
         android:background="@drawable/bg_activity_login_button"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/license"
         android:textAllCaps="false"
         android:text="Зарегистрироваться"
         android:textSize="@dimen/view_text_size_20x"
@@ -154,4 +160,6 @@
         android:layout_marginHorizontal="@dimen/view_margin_20x"
         />
 
-</RelativeLayout>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
