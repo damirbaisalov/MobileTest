@@ -1,9 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary_color"
     tools:context=".support.presentation.SupportServiceActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/support_service_image"
+        app:civ_border_width="@dimen/view_radius_border_5x"
+        app:civ_border_color="@color/secondary_color"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/view_margin_10x"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/support_service_title"
+        android:textColor="@color/secondary_color"
+        android:textSize="@dimen/view_text_size_20x"
+        android:layout_gravity="center"
+        android:layout_marginVertical="@dimen/view_margin_8x"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/support_service_content"
+        android:textColor="@color/secondary_color"
+        android:textSize="@dimen/view_text_size_20x"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        />
+
+    <Button
+        android:id="@+id/activity_support_service_telephone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_40x"
+        android:background="@drawable/bg_activity_login_button"
+        android:text="@string/support_service_telephone"
+        android:textSize="@dimen/view_text_size_20x"
+        android:textAllCaps="false"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        android:layout_marginTop="@dimen/view_margin_15x"
+        />
+
+    <Button
+        android:id="@+id/activity_support_service_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_40x"
+        android:background="@drawable/bg_activity_login_button"
+        android:text="@string/support_service_email"
+        android:textAllCaps="false"
+        android:textSize="@dimen/view_text_size_20x"
+        android:layout_marginTop="@dimen/view_margin_8x"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        />
+
+    <EditText
+        android:id="@+id/activity_support_service_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/bg_activity_login_edit_text"
+        android:hint="@string/support_service_edit_text_hint"
+        android:textSize="@dimen/view_text_size_20x"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="2000"
+        android:maxLines="4"
+        android:gravity="top|left"
+        android:padding="@dimen/view_padding_18x"
+        android:layout_marginTop="@dimen/view_margin_20x"
+        />
+
+    <Button
+        android:id="@+id/activity_support_service_send_message_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_40x"
+        android:background="@drawable/bg_activity_login_button"
+        android:text="@string/support_service_send"
+        android:textAllCaps="false"
+        android:textSize="@dimen/view_text_size_20x"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        android:layout_marginVertical="@dimen/view_margin_15x"
+        />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
