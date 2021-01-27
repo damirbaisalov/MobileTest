@@ -167,6 +167,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/activity_registration_sign_up_button"
         android:layout_width="match_parent"
         android:layout_height="@dimen/view_height_40x"
         android:background="@drawable/bg_activity_login_button"
