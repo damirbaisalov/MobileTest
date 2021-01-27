@@ -14,7 +14,7 @@
     <string name="support_service_send">Отправить сообщение</string>
     <string name="support_service_edit_text_hint">Напишите свое сообщение</string>
     <string name="name">Имя</string>
-    <string name="surname">Фаимилия</string>
+    <string name="surname">Фамилия</string>
     <string name="third_name">Отчество</string>
     <string name="date">Дата рождения</string>
     <string name="city">Город проживания</string>
