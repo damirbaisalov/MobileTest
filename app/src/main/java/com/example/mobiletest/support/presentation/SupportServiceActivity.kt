@@ -32,7 +32,11 @@ class SupportServiceActivity : AppCompatActivity() {
         telephoneCallButton.setOnClickListener {
             val intent = Intent(Intent.ACTION_DIAL)
             intent.data = Uri.parse(SUPPORT_TELEPHONE_NUMBER)
-            startActivity(intent)
+            try {
+                startActivity(intent)
+            } catch (e: Exception) {
+                Toast.makeText(this, e.toString(), Toast.LENGTH_LONG).show()
+            }
         }
 
         supportEmailButton.setOnClickListener {
