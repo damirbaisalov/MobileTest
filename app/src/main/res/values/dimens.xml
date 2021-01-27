@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="view_margin_8x">8dp</dimen>
+    <dimen name="view_margin_10x">10dp</dimen>
     <dimen name="view_margin_15x">15dp</dimen>
     <dimen name="view_margin_16x">16dp</dimen>
     <dimen name="view_margin_20x">20dp</dimen>
@@ -17,6 +18,7 @@
     <dimen name="view_padding_16x">16dp</dimen>
     <dimen name="view_padding_18x">18dp</dimen>
 
+    <dimen name="view_radius_border_5x">5dp</dimen>
     <dimen name="view_radius_border_8x">8dp</dimen>
     <dimen name="view_radius_border_width_4x">4dp</dimen>
 

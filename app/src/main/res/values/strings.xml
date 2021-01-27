@@ -7,4 +7,10 @@
     <string name="password_hint">Пароль</string>
     <string name="login_hint">Логин</string>
     <string name="welcome">ДОБРО ПОЖАЛОВАТЬ!</string>
+    <string name="support_service_title">СЛУЖБА ТЕХПОДДЕРЖКИ</string>
+    <string name="support_service_content">Приветствуем вас на нашем проекте. Вы можете позвонить нам по телефону ниже, написать на почту или отправить сообщение прямо с приложения</string>
+    <string name="support_service_telephone">+7 701 32 99 400</string>
+    <string name="support_service_email">support@app.kz</string>
+    <string name="support_service_send">Отправить сообщение</string>
+    <string name="support_service_edit_text_hint">Напишите свое сообщение</string>
 </resources>
