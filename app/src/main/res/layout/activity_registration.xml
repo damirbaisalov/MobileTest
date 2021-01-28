@@ -1,9 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    android:overScrollMode="never"
     tools:context=".registration.RegistrationActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/account_image"
+        android:layout_width="@dimen/view_size_150x"
+        android:layout_height="@dimen/view_size_150x"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_baseline_person"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/view_margin_15x"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/account_add_photo_button"
+        android:layout_width="@dimen/view_size_150x"
+        android:layout_height="@dimen/view_height_40x"
+        android:layout_below="@id/account_image"
+        android:text="@string/add_photo"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_activity_login_button"
+        android:layout_marginTop="@dimen/view_margin_15x"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/account_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_40x"
+        android:layout_below="@+id/account_add_photo_button"
+        android:hint="@string/name"
+        android:textColor="@color/black"
+        android:paddingStart="@dimen/view_padding_15x"
+        android:lines="1"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:background="@drawable/bg_activity_login_edit_text"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        android:layout_marginVertical="@dimen/view_margin_15x"
+        />
+
+    <EditText
+        android:id="@+id/account_surname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_40x"
+        android:layout_below="@+id/account_name"
+        android:hint="@string/surname"
+        android:lines="1"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:paddingStart="@dimen/view_padding_15x"
+        android:background="@drawable/bg_activity_login_edit_text"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        />
+
+    <EditText
+        android:id="@+id/account_third_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_40x"
+        android:layout_below="@+id/account_surname"
+        android:hint="@string/third_name"
+        android:lines="1"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:paddingStart="@dimen/view_padding_15x"
+        android:background="@drawable/bg_activity_login_edit_text"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        android:layout_marginVertical="@dimen/view_margin_15x"
+        />
+
+    <EditText
+        android:id="@+id/account_date"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_40x"
+        android:layout_below="@+id/account_third_name"
+        android:hint="@string/date"
+        android:textColor="@color/black"
+        android:paddingStart="@dimen/view_padding_15x"
+        android:background="@drawable/bg_activity_login_edit_text"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        />
+
+    <EditText
+        android:id="@+id/account_city"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_40x"
+        android:hint="@string/city"
+        android:paddingStart="@dimen/view_padding_15x"
+        android:textColor="@color/black"
+        android:lines="1"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_below="@+id/account_date"
+        android:background="@drawable/bg_activity_login_edit_text"
+        android:layout_marginTop="@dimen/view_margin_15x"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        />
+
+    <EditText
+        android:id="@+id/account_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_size_140x"
+        android:layout_below="@+id/account_city"
+        android:hint="@string/about_user"
+        android:padding="@dimen/view_padding_15x"
+        android:textColor="@color/black"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="2000"
+        android:maxLines="4"
+        android:gravity="top|left"
+        android:background="@drawable/bg_activity_login_edit_text"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        android:layout_marginVertical="@dimen/view_margin_15x"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account_about"
+        android:buttonTint="@color/secondary_color"
+        android:layout_marginStart="@dimen/view_margin_20x"
+        />
+
+    <LinearLayout
+        android:id="@+id/activity_registration_license_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/checkbox"
+        android:layout_below="@id/account_about"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/license"
+            android:textColor="@color/secondary_color"
+            android:textSize="@dimen/view_text_size_15x"
+            android:layout_marginTop="@dimen/view_margin_4x"
+            android:layout_marginHorizontal="@dimen/view_margin_3x"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_height_1x"
+            android:background="@color/secondary_color"
+            android:layout_marginStart="@dimen/view_margin_3x"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_registration_sign_up_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_40x"
+        android:background="@drawable/bg_activity_login_button"
+        android:layout_below="@id/activity_registration_license_linear_layout"
+        android:textAllCaps="false"
+        android:text="@string/sign_up_user"
+        android:textSize="@dimen/view_text_size_20x"
+        android:layout_marginVertical="@dimen/view_margin_20x"
+        android:layout_marginHorizontal="@dimen/view_margin_20x"
+        />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

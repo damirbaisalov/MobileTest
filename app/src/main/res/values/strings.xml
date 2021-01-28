@@ -13,4 +13,13 @@
     <string name="support_service_email">support@app.kz</string>
     <string name="support_service_send">Отправить сообщение</string>
     <string name="support_service_edit_text_hint">Напишите свое сообщение</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="third_name">Отчество</string>
+    <string name="date">Дата рождения</string>
+    <string name="city">Город проживания</string>
+    <string name="about_user">О себе</string>
+    <string name="sign_up_user">Зарегистрироваться</string>
+    <string name="add_photo">Добавить фотографию</string>
+    <string name="license">Пользовательское соглашение</string>
 </resources>

@@ -61,9 +61,6 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-
-        checkEditTextForTextWatcher(loginEditText)
-        checkEditTextForTextWatcher(passwordEditText)
     }
 
     private fun initViews() {
@@ -73,21 +70,5 @@ class LoginActivity : AppCompatActivity() {
         skipButton = findViewById(R.id.activity_login_skip_button)
         loginEditText = findViewById(R.id.login_edit_text)
         passwordEditText = findViewById(R.id.password_edit_text)
-    }
-
-    private fun checkEditTextForTextWatcher(editText: EditText) {
-        editText.addTextChangedListener(object: TextWatcher {
-
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-            }
-
-            override fun afterTextChanged(s: Editable?) {
-                val isInputEmpty: Boolean = s.toString().isBlank()
-                loginButton.isEnabled = !isInputEmpty
-            }
-        })
     }
 }
