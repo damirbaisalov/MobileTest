@@ -10,7 +10,6 @@ import android.view.Gravity
 import android.widget.*
 import com.example.mobiletest.R
 import java.util.*
-import kotlin.math.sign
 
 const val IMAGE_CODE = 1
 class RegistrationActivity : AppCompatActivity() {
